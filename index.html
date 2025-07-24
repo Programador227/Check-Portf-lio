@@ -3,43 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Check Portfólio</title>
+  <title>Check - Portfólio</title>
+
+  <link rel="icon" type="image/png" href="https://i.imgur.com/v5WhQGu.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Check</h1>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
 
-  <section class="home">
-    <h2>Olá! 👋</h2>
-    <p>Sou um desenvolvedor focado em criar sites incríveis e funcionais.</p>
-  </section>
+  <div class="app-container">
+    <header>
+      <a href="#" class="logo" data-target="home">Check</a>
+      <nav>
+        <a href="#" class="nav-link active" data-target="home">Início</a>
+        <a href="#" class="nav-link" data-target="sobre">Sobre</a>
+        <a href="#" class="nav-link" data-target="projetos">Projetos</a>
+        <a href="#" class="nav-link" data-target="contato">Contato</a>
+      </nav>
+    </header>
 
-  <section id="sobre">
-    <h2>Sobre mim</h2>
-    <p>Sou apaixonado por tecnologia, desenvolvimento web e design. Tenho pouca experiência com HTML, CSS.</p>
-  </section>
+    <main class="content-panel">
+      <section id="home" class="content-section active">
+        <h2>Bem-vindo!</h2>
+        <h1>Sou Um Desenvolvedor Focado Em Criar Sites <span class="highlight">Incríveis</span> E <span class="highlight">Funcionais</span></h1>
+        <p>Navegue Pelo Menu Para Me Conhecer Melhor.</p>
+      </section>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <ul>
-      <li><strong>Projeto 1:</strong> Site de Café</li>
-    </ul>
-  </section>
+      <section id="sobre" class="content-section">
+        <h2>Sobre Mim</h2>
+        <p>Sou apaixonado por tecnologia e por transformar ideias em realidade digital. Embora esteja no início da minha jornada com HTML e CSS, busco constantemente aprender e aplicar as melhores práticas para criar interfaces limpas e eficientes.</p>
+      </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Me envie um e-mail: <a href="mailto:chrystian@email.com">check@gmail.com (Sem Função)</a></p>
-  </section>
+      <section id="projetos" class="content-section">
+        <h2>Meus Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Site de Cafeteria</h3>
+            <p>Um layout moderno para uma cafeteria fictícia.</p>
+            <a href="#" class="btn">Ver Projeto <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <h3>Meu Portfólio</h3>
+            <p>Este próprio site, com navegação interativa.</p>
+            <a href="#" class="btn">Ver Código <i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <p>&copy; 2025 Check</p>
-  </footer>
+      <section id="contato" class="content-section">
+        <h2>Entre em Contato</h2>
+        <p>Vamos criar algo incrível juntos! Me encontre nas redes sociais ou envie um e-mail.</p>
+        <div class="social-links">
+          <a href="mailto:check@gmail.com" title="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" title="LinkedIn"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Check.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
